@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[margin=1in]{geometry}
+    \usepackage[english]{babel}
+    \usepackage{amsmath}
+    \usepackage{subfiles}
+    \usepackage{fancyhdr}
+    \usepackage{siunitx}
+    \usepackage{graphicx}
+
+\graphicspath{{images/}{../images/}}
+
+\title{\vspace{-1.5cm}Homework 2 (After Midterm)}
+\author{Peter Hieu Vu\\ASTR\&101}
+%\date{May 15, 2018}
+
+\newcommand\inum[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
+\newcommand\ans[1]{\textbf{(#1)}}
+
+\newcommand\onlyinsubfile[1]{#1}
+\newcommand\notinsubfile[1]{}
+
+\newcommand\sfsection[1]{\onlyinsubfile{\section*{#1}}\notinsubfile{\subsection{#1}}}
+
+\newcommand\sftitle[2]{\onlyinsubfile{\title{\vspace{-1.5cm}#1}\date{#2}\maketitle}}
+
+\pagestyle{fancy}
+\lhead{HW2}
+\rhead{Vu}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\maketitle
+
+\chead{CH. 4}
+\section{Homework Chapter 4 (Pt. 2)}
+\subfile{assignments/chapter4pt2}
+
+
+\end{document}

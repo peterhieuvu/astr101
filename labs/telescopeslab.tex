@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[margin=1in]{geometry}
+    \usepackage[english]{babel}
+    \usepackage{amsmath}
+    \usepackage{subfiles}
+    \usepackage{fancyhdr}
+    \usepackage{siunitx}
+    \usepackage{graphicx}
+
+\title{\vspace{-1.5cm}Telescopes Lab}
+\author{Peter Hieu Vu\\ASTR\&101}
+\date{May 15, 2018}
+
+\pagestyle{fancy}
+\lhead{Telescopes Lab}
+\rhead{Vu}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand\mk{\textbf{--}}
+
+\begin{document}
+    \maketitle
+
+    \begin{enumerate}
+        \item What is refraction?\\
+            \mk{}Refraction is the bending of light when it goes from one medium to another. This could be something like light going from air, into a piece of glass, and then back out again.
+        \item What type of lens brings light to focus at a point? Sketch a figure showing parallel rays of light coming to focus. Is the image formed by such a lens erect, or inverted?\\
+            \mk{}A convex lens brings light to focus at a point. \vspace{5cm}\\
+            The image formed by such a lens is inverted as we have observed in class with the magnifying glass projecting the window light onto the box.
+        \item What do we mean by the focal length of a thin lens? Measure the focal length of the lens given to you. For this purpose would you use a source of light close to the lens, or a source that is far away?\\
+            \mk{}When we mean the focal length of a thin lens, we mean the distance between the center of the lens to the focus point. The focal length of the lens given to use in class is roughly 17cm. For this purpose, we would use a source of light far away from the lens. The focus is supposed to be where parallel lines entering the lens converge and so it is best to use a far away source of light where the incoming light will be as close to parallel as possible.
+        \item What are two major types of lens aberrations that lead to images that are not true to the objects whose light is being sampled by the lens? In each case describe the mechanism by which these aberrations are produced?\\
+            \mk{}The two major types of lens aberrations is chromatic aberration and spherical aberration. Chromatic aberration happens because different wavelengths of light bend at different angles. This means that different colors/wavelengths will focus at slightly different points, creating for colored fringes around the edges of some objects. Spherical aberration happens with all spherical lenses where light hitting different parts of the lens focus at different points.
+        \item What type of mirror (reflecting surface) brings light to focus at a point?\\
+            \mk{}A concave mirror brings light to focus at a point. The tips of the mirror bend inwards and light hitting the different parts of the mirror will reflect towards the focus.
+        \item What are some advantages mirrors have over lenses when used in telescopes?\\
+            \begin{itemize}
+                \item Components. Mirrored telescopes only need one mirror to create a perfect image whereas a telescope with lenses needs 3 to create a perfect image.
+                \item Production. Because of the single mirror in a reflecting telescope, only one polished surface needs to be made. In a refracting telescope, there needs to be 3 lenses which means 6 polished surfaces.
+                \item Weight. The single glass mirror in a mirrored telescope will make a lighter instrument than the 3 glass lenses in a refractor. 
+            \end{itemize}
+        \item If you use two thin lenses to make a telescope, how is the distance between the lenses related to the focal length of the two lenses?\\
+            \mk{}If you use two thin lenses to make a telescope, the distance between the lenses is the combined distance of the two focal lengths. If the focal length of the objective lens is $x$ mm, and the focal length of the eyepiece is $y$ mm, the distance between the lenses will be $x + y$ mm.
+        \item Define the magnification of a telescope. If the objective lens has a focal length of 1000mm and the eye lens has a focal length of 10mm, what is the magnification of the telescope?\\
+            \mk{}The magnification of a telescope is given by the formula below. 
+            \begin{equation*}
+                \text{magnification} = \frac{\text{focal length of the objective lens}}{\text{focal length of the eyepiece}}
+            \end{equation*}
+            We can plug in the values 1000mm and 10mm into the formula to get:
+            \begin{equation*}
+                \text{magnification} = \frac{1000mm}{10mm} = \boxed{100\times}
+            \end{equation*}
+        \item What happens to the field of view as you increase the magnification? To see an extended object like the moon in its entirety would you use a low focal length eyepiece or a long focal length eyepiece?\\
+            \mk{}As you increase the magnification, field of view decreases. To see an extended object like the moon in its entirety you would need to use a long focal length eyepiece. Since field of view decreases as you increase magnification, you would want lower magnification to see the whole moon. To get this, you would need to have long focal length which is in the denominator of the definition of magnification. 
+        \item As you increase the diameter of the objective \begin{enumerate}
+            \item How does the brightness of the image in a telescope change?\\
+                \begin{align*}
+                    \text{brightness} &\propto \text{light-gathering ability}\\
+                    \text{light-gathering ability} &\propto \text{area}\\
+                    \text{area} &\propto \text{diameter}^2
+                \end{align*}
+                This means that the as the diameter of an object increases by a factor $x$, the brightness of the image will change by $x^2$.
+            \item How does the ability of the telescope to resolve close objects change?
+                \begin{equation*}
+                    \text{resolution} \propto \text{diameter} 
+                \end{equation*}
+                This means that as the diameter increases, the ability of the telescope to resolve close objects increases by the same amount.
+        \end{enumerate}
+    \end{enumerate}
+
+\end{document}

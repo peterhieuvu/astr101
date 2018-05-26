@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[margin=1in]{geometry}
+    \usepackage[english]{babel}
+    \usepackage{amsmath}
+    \usepackage{subfiles}
+    \usepackage{fancyhdr}
+    \usepackage{siunitx}
+    \usepackage{graphicx}
+
+\graphicspath{{images/}{../images/}}
+
+\title{\vspace{-1.5cm}Homework 1 (Before Midterm)}
+\author{Peter Hieu Vu\\ASTR\&101}
+\date{May 8, 2018}
+
+\newcommand\inum[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
+\newcommand\ans[1]{\textbf{(#1)}}
+
+\newcommand\onlyinsubfile[1]{#1}
+\newcommand\notinsubfile[1]{}
+
+\newcommand\sfsection[1]{\onlyinsubfile{\section{#1}}\notinsubfile{\subsection{#1}}}
+
+\pagestyle{fancy}
+\lhead{HW1}
+\rhead{Vu}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+    \renewcommand{\onlyinsubfile}[1]{}
+    \renewcommand{\notinsubfile}[1]{#1}
+
+    \maketitle
+
+    \chead{CH. 1}
+    \section{Homework Chapter 1}
+        \subfile{assignments/chapter1}
+
+    \newpage
+    \chead{CH. 2}   
+    \section{Homework Chapter 2}
+        \subfile{assignments/chapter2}
+
+    \newpage
+    \chead{CH. 3}
+    \section{Homework Chapter 3}
+        \subfile{assignments/chapter3}
+
+    \newpage
+    \chead{CH. 4}
+    \section{Homework Chapter 4}
+        \subfile{assignments/chapter4}
+
+\end{document}
